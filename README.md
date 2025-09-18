@@ -1,6 +1,8 @@
 # OpenClash_Overwrite
 OpenClash覆写模块相关文件
 
+建议新装OpenClash使用，不需要修改任何luci设置
+
 需要OpenClash	v0.47.006及以上版本使用
 
 建议切换更新分支为Dev 并启用Smart
