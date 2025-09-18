@@ -12,6 +12,7 @@ OpenClash覆写模块相关文件
 分流规则及策略组基于项目：[Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules.git)
 
 使用方法：
+
 新增覆写模块：
 
 订阅链接
@@ -34,6 +35,8 @@ EN_KEY=你的机场订阅链接
 温馨提示：
 本仓库文件内引用的各种链接均为原始链接，使用时注意需路由本身可访问GitHub
 
-满足上述前提下，第一次运行启动成功后会提示内核错误，重启即可
+满足上述前提下，前几次运行启动成功后会提示内核错误，重启几次即可
 
 （默认OpenClash没GeoIP数据库）第一次运行就是它下载去了，不能热重载导致第一次会运行错误
+
+当然你也可以手动提前更新一下GeoIp dat
