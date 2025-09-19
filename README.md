@@ -24,8 +24,15 @@ OpenClash覆写模块相关文件
 类型：http
 
 订阅链接为：
+
+主路由用户使用：
 ```
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite.conf
+```
+
+旁路由用户使用：
+```
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-Bypass.conf
 ```
 注意定义环境变量：
 ```
