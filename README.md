@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main
 
 旁路由用户使用：
 ```
-https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-Bypass.conf
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-bypass.conf
 ```
 注意定义环境变量：
 ```
