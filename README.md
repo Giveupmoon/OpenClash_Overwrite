@@ -25,7 +25,7 @@ OpenClash覆写模块相关文件
 
 订阅链接为：
 ```
-https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Giveup_Overwrite.conf
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite.conf
 ```
 注意定义环境变量：
 ```
