@@ -39,12 +39,16 @@ https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main
 ```
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-bypass.conf
 ```
-注意定义环境变量：
+所有配置都需注意环境变量：
 ```
 EN_KEY=你的机场订阅链接
 ```
 保存 去其他配置页底部点一手应用配置即可
 
+旁路由配置默认启用国内加密doh，如需自定义dns可添加环境变量：
+```
+EN_DNS=DNS
+```
 
 温馨提示：
 本仓库文件内引用的各种链接均为原始链接，使用时注意需路由本身可访问GitHub
