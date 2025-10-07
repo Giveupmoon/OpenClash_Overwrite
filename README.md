@@ -7,13 +7,7 @@
 
 ## 📌 使用建议
 
-* 建议切换更新分支为 **Dev** 并启用 **Smart 智能策略组**
-* 默认配置：
-
-  * ✅ 开启 Smart 智能策略组
-  * ✅ 开启数据收集，最大文件大小 **500MB**
-  * ❌ 默认关闭 LightGBM 模型
-* 建议使用一段时间后 **自行训练模型并替换使用**
+* 建议切换更新分支为 **Dev** 并不启用 **Smart 内核**
 
 分流规则与策略组基于项目：
 👉 [Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules.git)
