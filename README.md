@@ -94,13 +94,6 @@ EN_DNS=DNS
 
 ---
 
-## 📂 项目来源
-
-该项目部分规则与策略组参考自：
-👉 [Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules.git)
-
----
-
 ✨ **如果本项目对你有帮助，请点个 Star 支持一下！**
 🧡 [Giveupmoon/OpenClash_Overwrite](https://github.com/Giveupmoon/OpenClash_Overwrite)
 
