@@ -9,7 +9,8 @@
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/Giveupmoon/OpenClash_Overwrite?style=for-the-badge&logo=git&label=Last%20Update" />
   <img src="https://img.shields.io/github/repo-size/Giveupmoon/OpenClash_Overwrite?style=for-the-badge&logo=github&label=Repo%20Size" />
-  <img src="https://img.shields.io/badge/OpenClash-v0.47.006%2B-blue?style=for-the-badge&logo=openwrt" />
+  <a href="https://github.com/vernesong/OpenClash" target="_blank">
+    <img src="https://img.shields.io/badge/OpenClash-v0.47.006%2B-blue?style=for-the-badge&logo=openwrt" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
 
