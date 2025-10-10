@@ -55,37 +55,37 @@
 * **类型**：`http`  
 * **订阅链接**：根据使用场景选择  
 
-#### 🔹 主路由用户-url-tes,ipv6
+#### 🔹 主路由用户-url-tes
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite.conf
 ```
 
-#### 🔹 主路由用户-smart,ipv6
+#### 🔹 主路由用户-smart
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart.conf
 ```
 
-#### 🔹 主路由无需 IPv6 用户-url-tes,ipv6
+#### 🔹 主路由无需 IPv6 用户-url-tes
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-noipv6.conf
 ```
 
-#### 🔹 主路由无需 IPv6 用户-smart,ipv6
+#### 🔹 主路由无需 IPv6 用户-smart
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-noipv6.conf
 ```
 
-#### 🔹 旁路由用户-url-tes,ipv6
+#### 🔹 旁路由用户-url-tes
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-bypass.conf
 ```
 
-#### 🔹 旁路由用户-smart,ipv6
+#### 🔹 旁路由用户-smart
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-bypass.conf
