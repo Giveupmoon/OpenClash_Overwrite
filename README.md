@@ -20,7 +20,6 @@
 
 * [📌 使用建议](#-使用建议)
 * [⚙️ 使用方法](#️-使用方法)
-
   * [1️⃣ 新增覆写模块](#1️⃣-新增覆写模块)
   * [2️⃣ 配置环境变量](#2️⃣-配置环境变量)
 * [💡 温馨提示](#-温馨提示)
@@ -30,9 +29,21 @@
 
 ## 📌 使用建议
 
-* 建议切换更新分支为 **Dev** 并 **不启用 Smart 内核**。
-* 分流规则与策略组基于以下项目：
-  👉 [Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules.git)
+* 建议切换更新分支为 **Dev** 并 **启用 Smart 内核**。  
+* 分流规则与策略组基于以下项目：  
+  👉 [Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules.git)  
+
+---
+
+### ⚡ Smart 配置说明
+
+* **模型类型**：`Model-large`  
+* **节点选择策略**：粘性会话（`sticky-sessions`）  
+* **权重加成**：
+  * `Premium: 0.9`
+  * `SG: 1.3`
+  * `HK: 1.5`
+* **模型更新策略**：每 **24 小时** 自动更新  
 
 ---
 
@@ -40,28 +51,34 @@
 
 ### 1️⃣ 新增覆写模块
 
-* **文件名**：可自定义
-* **类型**：`http`
-* **订阅链接**：根据使用场景选择
+* **文件名**：可自定义  
+* **类型**：`http`  
+* **订阅链接**：根据使用场景选择  
 
 #### 🔹 主路由用户
 
-```bash
+```Url-tes,ipv6
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite.conf
 ```
-
+```Smart,ipv6
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart.conf
+```
 #### 🔹 主路由无需 IPv6 用户
 
-```bash
+```Url-tes,ipv6
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-noipv6.conf
 ```
-
+```Smart,ipv6
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-noipv6.conf
+```
 #### 🔹 旁路由用户
 
-```bash
+```Url-tes,ipv6
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-bypass.conf
 ```
-
+```Smart,ipv6
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-bypass.conf
+```
 ---
 
 ### 2️⃣ 配置环境变量
@@ -86,15 +103,14 @@ EN_DNS=DNS
 
 ## 💡 温馨提示
 
-1. 仓库文件均使用 **GitHub 原始链接**，请确保路由器可正常访问 GitHub。
-2.  默认 OpenClash 不包含 **GeoIP 数据库**：
-       * 建议手动提前更新 GeoIP 数据库
-3. 如未提前下载GeoIP数据库，初次运行可能提示 **内核错误**，多次重启后即可恢复。
-
+1. 仓库文件均使用 **GitHub 原始链接**，请确保路由器可正常访问 GitHub。  
+2. 默认 OpenClash 不包含 **GeoIP 数据库**：
+   * 建议手动提前更新 GeoIP 数据库。  
+3. 如未提前下载 GeoIP 数据库，初次运行可能提示 **内核错误**，多次重启后即可恢复。  
 
 ---
 
-✨ **如果本项目对你有帮助，请点个 Star 支持一下！**
+## 📂 项目来源
+
+✨ **如果本项目对你有帮助，请点个 Star 支持一下！**  
 🧡 [Giveupmoon/OpenClash_Overwrite](https://github.com/Giveupmoon/OpenClash_Overwrite)
-
----
