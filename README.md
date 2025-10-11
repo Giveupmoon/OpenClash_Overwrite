@@ -103,7 +103,7 @@ https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main
 EN_KEY=你的机场订阅链接
 ```
 
-#### ✴️ 可选变量 — 自定义 DNS（仅旁路由）
+#### ✴️ 自定义 DNS（仅旁路由）必须指定，否则将使用 **defdefault-nameserver**
 
 ```bash
 EN_DNS=DNS
