@@ -122,7 +122,6 @@ EN_DNS=DNS
 
 ---
 
-## 📂 项目来源
+## 📂 DD
 
 ✨ **如果本项目对你有帮助，请点个 Star 支持一下！**  
-🧡 [Giveupmoon/OpenClash_Overwrite](https://github.com/Giveupmoon/OpenClash_Overwrite)
