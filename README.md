@@ -61,10 +61,16 @@
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite.conf
 ```
 
-#### 🔹 主路由用户-Smart
+#### 🔹 主路由用户-Smart-LBGM
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-LGBM.conf
+```
+
+#### 🔹 主路由用户-Smart-使用默认模型并开启数据收集
+
+```bash
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart.conf
 ```
 
 #### 🔹 主路由无需 IPv6 用户-Url-test
@@ -73,10 +79,16 @@ https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-noipv6.conf
 ```
 
-#### 🔹 主路由无需 IPv6 用户-Smart
+#### 🔹 主路由无需 IPv6 用户-Smart-LGBM
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-noipv6-LBGM.conf
+```
+
+#### 🔹 主路由无需 IPv6 用户-Smart-使用默认模型并开启数据收集
+
+```bash
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-noipv6.conf
 ```
 
 #### 🔹 旁路由用户-Url-test
@@ -85,10 +97,16 @@ https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-bypass.conf
 ```
 
-#### 🔹 旁路由用户-Smart
+#### 🔹 旁路由用户-Smart-LGBM
 
 ```bash
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-bypass-LBGM.conf
+```
+
+#### 🔹 旁路由用户-Smart-使用默认模型并开启数据收集
+
+```bash
+https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Overwrite/Overwrite-smart-bypass.conf
 ```
 
 ---
