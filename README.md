@@ -109,7 +109,12 @@ EN_KEY=你的机场订阅链接
 EN_DNS=DNS
 ```
 
-配置完成后，**保存 → 前往其他配置页底部 → 点击「应用配置」**。
+举例：
+```bash
+EN_KEY=https://xxx.xxx;EN_DNS=114.114.114.114
+```
+
+配置完成后，**保存 → 点一首重启按钮即可**。
 
 ---
 
@@ -122,7 +127,6 @@ EN_DNS=DNS
 
 ---
 
-## 📂 项目来源
+## 📂 DD
 
 ✨ **如果本项目对你有帮助，请点个 Star 支持一下！**  
-🧡 [Giveupmoon/OpenClash_Overwrite](https://github.com/Giveupmoon/OpenClash_Overwrite)
