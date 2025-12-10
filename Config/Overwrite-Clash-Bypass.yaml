@@ -659,7 +659,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
 
-  - name: "🇼🇸 台湾节点"
+  - name: "🇹🇼 台湾节点"
     type: url-test
     url: https://www.gstatic.com/generate_204
     filter: "(?i)(台|新北|彰化|TW|Taiwan|🇹🇼)"
