@@ -12,7 +12,6 @@
   <a href="https://github.com/vernesong/OpenClash" target="_blank">
     <img src="https://img.shields.io/badge/OpenClash-v0.47.006%2B-blue?style=for-the-badge&logo=openwrt" />
   </a>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
 </p>
 
 ---
