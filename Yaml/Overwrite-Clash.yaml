@@ -13,6 +13,9 @@ proxy-providers:
       skip-cert-verify: true
       udp: true
 
+proxy-groups-anchor:
+  Strategy-Group:  &sg {type: select, proxies: [香港节点, 美国节点, 日本节点, 新加坡节点, 台湾节点, 自动选择,全球直连]}
+
 # 策略组
 proxy-groups:
   - {name: 👆🏻 手动选择, <<: *sg, use: [Sub-store]}
