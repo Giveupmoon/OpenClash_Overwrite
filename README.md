@@ -32,6 +32,7 @@
 ## 📌 使用建议
 
 * 建议切换更新分支为 **Dev** 并 **启用 Smart 内核**。  
+* 多机场用户建议搭配Sub-store聚合 载入配置
 * 分流规则与策略组基于以下项目：  
   👉 [Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules.git)  
 
@@ -129,18 +130,6 @@ https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main
 
 ```bash
 EN_KEY=你的机场订阅链接
-```
-
-#### ✴️ 自定义 DNS（仅旁路由）必须指定
-
-```bash
-EN_DNS=DNS
-```
-
-📘 举例：
-
-```bash
-EN_KEY=https://xxx.xxx;EN_DNS=114.114.114.114
 ```
 
 配置完成后，**保存 → 点一首重启按钮即可**。  
