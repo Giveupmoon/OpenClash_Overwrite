@@ -21,10 +21,6 @@ proxy-providers:
       skip-cert-verify: true
       udp: true
 
-authentication:                                                                                                 # 身份验证
-  - "mihome:mihome666"
-secret:                             "password"                                                                  # 面板访问密码
-
 anchor:
   # 策略组类型模板 - 定义不同的策略组基础配置
   BaseURL-test: &BaseURL-test {type: url-test, include-all: true, tolerance: 20, interval: 120, url: https://cp.cloudflare.com/generate_204}
