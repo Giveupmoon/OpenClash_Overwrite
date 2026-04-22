@@ -42,39 +42,39 @@ anchor:
 #             策略组配置
 # =========================================
 proxy-groups:
-  - {name: 手动选择,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/11111.png",                                     <<: *SelectDF,      use: [Sub-store]}
-  - {name: 自动选择,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Flight.png",                <<: *SelectAU}
-  - {name: 即时通讯,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Telegram.png",              <<: *SelectHK}
-  - {name: 社交媒体,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Twitter.png",               <<: *SelectHK}
-  - {name: GitHub,         icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/GitHub.png",                <<: *SelectHK}
-  - {name: ChatGPT,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/ChatGPT.png",               <<: *SelectUS}
-  - {name: Gemini,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/IconResource/App_icon/1024px/GoogleGemini.png",  <<: *SelectHK}
-  - {name: AI服务,         icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/AI_bot.png",                <<: *SelectUS}
-  - {name: TikTok,         icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/TikTok.png",                <<: *SelectUS}
-  - {name: AppleTV+,       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Apple_TV.png",              <<: *SelectHK}
-  - {name: YouTube,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/YouTube.png",               <<: *SelectSG}
-  - {name: Netflix,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Netflix.png",               <<: *SelectSG}
-  - {name: DisneyPlus,     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Disney_plus.png",           <<: *SelectSG}
-  - {name: HBO,            icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/HBO_MAX.png",               <<: *SelectSG}
-  - {name: PrimeVideo,     icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Prime.png",                 <<: *SelectSG}
-  - {name: Emby,           icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Emby.png",                  <<: *SelectSG}
-  - {name: Spotify,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Spotify.png",               <<: *SelectHK}
-  - {name: Bahamut,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Bahamut_i.png",             <<: *SelectTW}
-  - {name: 国外媒体,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Network.png",               <<: *SelectSG}
-  - {name: PayPal,         icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/PayPal.png",                <<: *SelectUS}
-  - {name: 谷歌服务,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Google.png",                <<: *SelectHK}
-  - {name: 苹果服务,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Apple_black.png",           <<: *SelectHK}
-  - {name: 微软服务,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Microsoft.png",             <<: *SelectHK}
-  - {name: 游戏平台,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png",                  <<: *SelectHK}
-  - {name: Steam,          icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Steam.png",                 <<: *SelectHK}
-  - {name: 测速工具,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/SpeedTest.png",             <<: *SelectHK}
-  - {name: 漏网之鱼,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/match.png",                                     <<: *SelectHK,      use: [Sub-store]}
-  - {name: 全球直连,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/DIRECT.png",                type: url-test,     proxies: [DIRECT]}
-  - {name: 香港节点,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Hong_Kong.png",             <<: *BaseURL-test,  filter: *FilterHK}
-  - {name: 美国节点,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/USA.png",                   <<: *BaseURL-test,  filter: *FilterUS}
-  - {name: 日本节点,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Japan.png",                 <<: *BaseURL-test,  filter: *FilterJP}
-  - {name: 新加坡节点,      icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Singapore.png",             <<: *BaseURL-test,  filter: *FilterSG}
-  - {name: 台湾节点,        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Taiwan_Province.png",       <<: *BaseURL-test,  filter: *FilterTW}
+  - {name: 自动选择,        <<: *SelectAU,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Flight.png"}
+  - {name: 即时通讯,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Telegram.png"}
+  - {name: 社交媒体,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Twitter.png"}
+  - {name: GitHub,         <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/GitHub.png"}
+  - {name: ChatGPT,        <<: *SelectUS,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/ChatGPT.png"}
+  - {name: Gemini,         <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/IconResource/App_icon/1024px/GoogleGemini.png"}
+  - {name: AI服务,         <<: *SelectUS,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/AI_bot.png"}
+  - {name: TikTok,         <<: *SelectUS,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/TikTok.png"}
+  - {name: AppleTV+,       <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Apple_TV.png"}
+  - {name: YouTube,        <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/YouTube.png"}
+  - {name: Netflix,        <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Netflix.png"}
+  - {name: DisneyPlus,     <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Disney_plus.png"}
+  - {name: HBO,            <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/HBO_MAX.png"}
+  - {name: PrimeVideo,     <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Prime.png"}
+  - {name: Emby,           <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Emby.png"}
+  - {name: Spotify,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Spotify.png"}
+  - {name: Bahamut,        <<: *SelectTW,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Bahamut_i.png"}
+  - {name: 国外媒体,        <<: *SelectSG,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Network.png"}
+  - {name: PayPal,         <<: *SelectUS,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/PayPal.png"}
+  - {name: 谷歌服务,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Google.png"}
+  - {name: 苹果服务,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Apple_black.png"}
+  - {name: 微软服务,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Microsoft.png"}
+  - {name: 游戏平台,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Game.png"}
+  - {name: Steam,          <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Steam.png"}
+  - {name: 测速工具,        <<: *SelectHK,                                 icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/SpeedTest.png"}
+  - {name: 漏网之鱼,        <<: *SelectHK,        use: [Sub-store],        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/match.png"}
+  - {name: 手动选择,        <<: *SelectDF,        use: [Sub-store],        icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/11111.png"}
+  - {name: 全球直连,        type: url-test,       proxies: [DIRECT],       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/DIRECT.png"}
+  - {name: 香港节点,        <<: *BaseURL-test,    filter: *FilterHK,       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Hong_Kong.png"}
+  - {name: 美国节点,        <<: *BaseURL-test,    filter: *FilterUS,       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/USA.png"}
+  - {name: 日本节点,        <<: *BaseURL-test,    filter: *FilterJP,       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Japan.png"}
+  - {name: 新加坡节点,      <<: *BaseURL-test,    filter: *FilterSG,       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Singapore.png"}
+  - {name: 台湾节点,        <<: *BaseURL-test,    filter: *FilterTW,       icon: "https://raw.githubusercontent.com//Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Taiwan_Province.png"}
 
 # =========================================
 #                 规则配置
