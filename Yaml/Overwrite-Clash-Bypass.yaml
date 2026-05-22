@@ -6,46 +6,173 @@ dns:
     - https://223.5.5.5/dns-query
     - tls://1.1.1.1:853
 
-proxy-providers:
-  Sub-store:
+# =========================================
+#                锚点配置
+# =========================================
+anchor:
+  # 代理提供商锚点
+  BaseProvider: &BaseProvider
     type: http
-    url: "url"
-    path: ./proxy_provider/provider.yaml
+    interval: 3600
     proxy: DIRECT
-    interval: 86400
     health-check:
       enable: true
-      interval: 300
-      url: https://g.cn/generate_204
+      url: "https://g.cn/generate_204"
+      interval: 10
     override:
       skip-cert-verify: true
       udp: true
+    path: ./proxy_provider/provider.yaml
+    filter: >-
+      ^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author)).*$
 
-anchor:
-  # 策略组类型模板 - 定义不同的策略组基础配置
-  BaseURL-test: &BaseURL-test {type: url-test, include-all: true, tolerance: 20, interval: 120, url: https://cp.cloudflare.com/generate_204, hidden: true}
-  BaseDIRECT: &BaseDIRECT {type: url-test, hidden: true}
-  # 节点筛选正则表达式 - 基于地理位置和关键词过滤
-  FilterHK: &FilterHK '^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$'
-  FilterSG: &FilterSG '^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$'
-  FilterJP: &FilterJP '^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$'
-  FilterUS: &FilterUS '^(?=.*(?i)(美|🇺🇸|US|USA|SJC|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD)).*$'
-  FilterTW: &FilterTW '^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$'
+  # 策略组类型模板
+  BaseURL-test: &BaseURL-test
+    type: url-test
+    include-all: true
+    tolerance: 20
+    interval: 120
+    url: https://cp.cloudflare.com/generate_204
+    hidden: true
 
-  # 策略组代理列表模板 - 预定义的代理节点优先级排序
-  SelectAU: &SelectAU {type: url-test, include-all: true, tolerance: 20, interval: 120, filter: "^((?!(直连)).)*$"}
-  SelectMS: &SelectMS {type: select, proxies: [香港节点, 美国节点, 日本节点, 新加坡节点, 台湾节点, 自动选择, 全球直连], use: [Sub-store]}
-  SelectMH: &SelectMH {type: select, proxies: [台湾节点, 香港节点, 美国节点, 新加坡节点, 日本节点, 手动选择, 自动选择, 全球直连], use: [Sub-store]}
-  SelectHK: &SelectHK {type: select, proxies: [香港节点, 美国节点, 新加坡节点, 日本节点, 台湾节点, 手动选择, 自动选择, 全球直连]}
-  SelectUS: &SelectUS {type: select, proxies: [美国节点, 香港节点, 新加坡节点, 日本节点, 台湾节点, 手动选择, 自动选择, 全球直连]}
-  SelectSG: &SelectSG {type: select, proxies: [新加坡节点, 香港节点, 美国节点, 日本节点, 台湾节点, 手动选择, 自动选择, 全球直连]}
-  SelectJP: &SelectJP {type: select, proxies: [日本节点, 香港节点, 美国节点, 新加坡节点, 台湾节点, 手动选择, 自动选择, 全球直连]}
-  SelectTW: &SelectTW {type: select, proxies: [台湾节点, 香港节点, 美国节点, 新加坡节点, 日本节点, 手动选择, 自动选择, 全球直连]}
+  # 节点筛选正则
+  # 香港
+  FilterHK: &FilterHK >-
+    ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
+  # 新加坡
+  FilterSG: &FilterSG >-
+    ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
+  # 日本
+  FilterJP: &FilterJP >-
+    ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
+  # 美国
+  FilterUS: &FilterUS >-
+    ^(?=.*(?i)(美|🇺🇸|US|USA|SJC|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD)).*$
+  # 台湾
+  FilterTW: &FilterTW >-
+    ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 
-  # 规则提供者相关锚点
-  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
-  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
-  class: &class {type: http, interval: 86400, behavior: classical, format: text}
+# 策略组代理列表模板 - 预定义的代理节点优先级排序
+  SelectAU: &SelectAU
+    type: url-test
+    include-all: true
+    tolerance: 20
+    interval: 120
+    filter: "^((?!(直连)).)*$"
+
+  SelectMS: &SelectMS
+    type: select
+    proxies:
+      - 香港节点
+      - 美国节点
+      - 日本节点
+      - 新加坡节点
+      - 台湾节点
+      - 自动选择
+      - 全球直连
+    use:
+      - Sub-store
+
+  SelectMH: &SelectMH
+    type: select
+    proxies:
+      - 香港节点
+      - 美国节点
+      - 新加坡节点
+      - 日本节点
+      - 台湾节点
+      - 手动选择
+      - 自动选择
+      - 全球直连
+    use:
+      - Sub-store
+
+  SelectHK: &SelectHK
+    type: select
+    proxies:
+      - 香港节点
+      - 美国节点
+      - 新加坡节点
+      - 日本节点
+      - 台湾节点
+      - 手动选择
+      - 自动选择
+      - 全球直连
+
+  SelectUS: &SelectUS
+    type: select
+    proxies:
+      - 美国节点
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 台湾节点
+      - 手动选择
+      - 自动选择
+      - 全球直连
+
+  SelectSG: &SelectSG
+    type: select
+    proxies:
+      - 新加坡节点
+      - 香港节点
+      - 美国节点
+      - 日本节点
+      - 台湾节点
+      - 手动选择
+      - 自动选择
+      - 全球直连
+
+  SelectJP: &SelectJP
+    type: select
+    proxies:
+      - 日本节点
+      - 香港节点
+      - 美国节点
+      - 新加坡节点
+      - 台湾节点
+      - 手动选择
+      - 自动选择
+      - 全球直连
+
+  SelectTW: &SelectTW
+    type: select
+    proxies:
+      - 台湾节点
+      - 香港节点
+      - 美国节点
+      - 新加坡节点
+      - 日本节点
+      - 手动选择
+      - 自动选择
+      - 全球直连
+
+# 规则提供者模板
+  ip: &ip
+    type: http
+    interval: 86400
+    behavior: ipcidr
+    format: mrs
+
+  domain: &domain
+    type: http
+    interval: 86400
+    behavior: domain
+    format: mrs
+
+  class: &class
+    type: http
+    interval: 86400
+    behavior: classical
+    format: text
+
+# =========================================
+#              代理提供商
+# =========================================
+proxy-providers:
+  Sub-store:
+    <<: *BaseProvider
+    url: "url"
 
 # 策略组
 # =========================================
