@@ -27,6 +27,9 @@ anchor:
     url: https://cp.cloudflare.com/generate_204
     hidden: true
 
+  BaseDIRECT: &BaseDIRECT
+    type: select
+
   # 节点筛选正则
   # 香港
   FilterHK: &FilterHK >-
