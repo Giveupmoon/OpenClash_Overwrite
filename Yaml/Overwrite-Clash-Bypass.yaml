@@ -394,19 +394,19 @@ rule-providers:
 
   Custom_Direct_Domain:
     <<: *domain
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct_Domain.mrs"
+    url: "https://raw.githubusercontent.com/Giveupmoon/Custom_OpenClash_Rules/main/rule/Custom_Direct_Domain.mrs"
 
   Custom_Direct_IP:
     <<: *ip
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Direct_IP.mrs"
+    url: "https://raw.githubusercontent.com/Giveupmoon/Custom_OpenClash_Rules/main/rule/Custom_Direct_IP.mrs"
 
   Custom_Proxy_Domain:
     <<: *domain
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Custom_Proxy_Domain.mrs"
+    url: "https://raw.githubusercontent.com/Giveupmoon/Custom_OpenClash_Rules/main/rule/Custom_Proxy_Domain.mrs"
 
   Custom_Proxy_IP:
     <<: *ip
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Custom_Proxy_IP.mrs"
+    url: "https://raw.githubusercontent.com/Giveupmoon/Custom_OpenClash_Rules/refs/heads/main/rule/Custom_Proxy_IP.mrs"
 
   google-cn:
     <<: *domain
@@ -418,11 +418,11 @@ rule-providers:
 
   Steam_CDN_Domain:
     <<: *domain
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_Domain.mrs"
+    url: "https://raw.githubusercontent.com/Giveupmoon/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_Domain.mrs"
 
   Steam_CDN_IP:
     <<: *ip
-    url: "https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_IP.mrs"
+    url: "https://raw.githubusercontent.com/Giveupmoon/Custom_OpenClash_Rules/refs/heads/main/rule/Steam_CDN_IP.mrs"
 
   category-game-platforms-download:
     <<: *domain
